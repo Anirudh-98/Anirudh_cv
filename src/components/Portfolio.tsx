@@ -30,7 +30,8 @@ const Portfolio = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Anirudh Jyothula Resume.pdf';
+    // Use the correct path relative to the deployed site's base URL
+    link.href = '/Anirudh_cv/Anirudh Jyothula Resume.pdf';
     link.download = 'Anirudh_Jyothula_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -359,7 +360,7 @@ const Portfolio = () => {
           
           <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 transform transition-all duration-1000 ${isVisible.contact ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
             <a
-              href="mailto:ranirudhjyothula@gmail.com"
+              href="mailto:anirudhjyothula@gmail.com"
               className="group bg-gradient-to-br from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/25"
             >
               <Mail className="w-8 h-8 text-red-400 mx-auto mb-4 group-hover:animate-bounce" />
